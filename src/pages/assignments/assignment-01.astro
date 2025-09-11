@@ -208,7 +208,7 @@ line-height: normal;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px;
+    
   }
 
   .hero-text-block{
@@ -233,7 +233,8 @@ line-height: normal;
     flex-direction: row;
     width: 1200px;
     min-height: 500px;
-  
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .section-text-panel{
@@ -251,16 +252,18 @@ line-height: normal;
 
   .btn-cta{
   display: flex;
-padding: 8px 16px;
-align-items: center;
-gap: 10px;
-border-radius: 8px;
-border: 2px solid #3A6EA5;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid #3A6EA5;
   }
 
   .section-image{
-    flex: 1 0 0;
-    align-self: stretch;
+     
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
   }
 
   .section-reverse{}
@@ -287,24 +290,17 @@ border: 2px solid #3A6EA5;
 
   .places-grid{
     display: flex;
-    width: 1200px;
-    padding-bottom: 64px;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 10px;
     flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
   }
   
-  .places-tiles{
-    display: flex;
-    width: 300px;
-    height: 200px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+  .places-tile{
+    width: 200px;
+    height: 100px;
     background: #FFD1A8;
+    justify-self: stretch;
+    align-self: stretch;
   }
 
   .places-name{
@@ -319,15 +315,24 @@ border: 2px solid #3A6EA5;
 
   .places-location{
   
-color: #000;
-
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 
+  .h2{
+    color: #000;
+
+font-family: "Bree Serif";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
   #hike{}
   #paddle{}
   #bike{}
