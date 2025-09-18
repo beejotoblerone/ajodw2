@@ -169,7 +169,7 @@ export const pageTitle = "Assignment 01 and also it's the updated one";
   .page-container{}
   nav{
  display: flex;
-    width: 1200px;
+    width: 300px;
     justify-content: space-between;
     align-items: center;
   } 
@@ -233,23 +233,24 @@ line-height: normal;
 
   .section-activity{
     display: flex;
+    width:300px;
     flex-direction: row;
-    width: 1200px;
+    min-width: 300px;
     min-height: 500px;
   }
 
   .section-reverse{
     flex-direction: row-reverse;
+
   }
 
   .section-text-panel{
     display: flex;
-    width: 400px;
-    padding: 32px;
+    min-width: 300px;
+    max-width: 30%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
     flex-shrink: 0;
     align-self: stretch;
     background-color: #F2F2F0;
@@ -265,10 +266,13 @@ line-height: normal;
   }
 
   .section-image{
-     
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    left:300px;
+    max-width:fit-content;
+    height: 600px;
     object-fit: cover;
+    min-width: 300px;
+ 
   }
 
 
